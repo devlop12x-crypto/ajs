@@ -1,20 +1,26 @@
 {
-  "name": "@devlop12x-crypto_github/ajs",
+  "name": "@devlop12x-crypto/ajs",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/devlop12x-crypto/ajs#readme",
-  "bugs": {
-    "url": "https://github.com/devlop12x-crypto/ajs/issues"
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/devlop12x-crypto/ajs.git"
   },
+  "author": "",
   "license": "ISC",
-  "author": "Visiliy",
-  "type": "commonjs",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "@babel/cli": "^7.x.x",
+    "@babel/core": "^7.x.x",
+    "@babel/preset-env": "^7.x.x",
+    "babel-loader": "^9.x.x",
+    "webpack": "^5.x.x",
+    "webpack-cli": "^5.x.x"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
